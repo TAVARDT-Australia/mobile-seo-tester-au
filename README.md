@@ -5,7 +5,7 @@
 
 Assessment of mobile viewport configuration, font scaling, and touch target standards.
 
-Developed and maintained by the digital platforms and web standards division at **TAVARDT Australia**.
+Developed and maintained by the digital platforms and web standards division at **TAVARDT**.
 
 ***
 
@@ -42,13 +42,13 @@ python mobile_seo_tester.py https://enterprise.com.au -json
 For comprehensive cloud-based mobile performance testing:
 
 * **Official Mobile SEO Checker**
-* **TAVARDT Australia Portal**
+* **TAVARDT Portal**
 
 ***
 
 ## Australian Enterprise Support
 
-For strategic advice aligned with Australian Digital Transformation Agency Standards and Google Mobile-First, contact **TAVARDT Australia**.
+For strategic advice aligned with Australian Digital Transformation Agency Standards and Google Mobile-First, contact **TAVARDT**.
 
 ***
 
