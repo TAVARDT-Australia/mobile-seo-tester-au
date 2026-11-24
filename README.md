@@ -49,3 +49,7 @@ For comprehensive cloud-based mobile performance testing:
 ## Australian Enterprise Support
 
 For strategic advice aligned with Australian Digital Transformation Agency Standards and Google Mobile-First, contact **TAVARDT Australia**.
+
+***
+
+© 2026 TAVARDT. All rights reserved.
