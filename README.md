@@ -2,43 +2,71 @@
 
 [![Mobile SEO Tester](https://img.shields.io/badge/TAVARDT-Mobile%20SEO-5b3cf5.svg)](https://tools.tavardt.com/au/mobile-seo-checker/)
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-Assessment of mobile viewport configuration, font scaling, and touch target standards.
+Audits mobile-first indexing readiness, meta viewport directives, fixed-width layout overflow, font legibility, and touch ergonomics.
 
 ***
 
-## Mobile SEO Testing Capabilities
+## Risk Vectors and Operational Impact in Mobile Web Experience
 
-* **Viewport Tag Verification**: Validation of `width=device-width, initial-scale=1` and accessibility zoom compliance.
-* **Content Scaling and Overflow**: Identification of fixed CSS widths causing horizontal scrolling on mobile viewports.
-* **Touch Target Ergonomics**: Review of interactive clickable surfaces against tactile usability guidelines.
-* **Mobile Typography Legibility**: Validation of base font sizing to guarantee effortless readability.
-* **Mobile-First Usability Score**: Technical rating from 0 to 100 with actionable optimization recommendations.
+Websites lacking proper mobile viewport declarations fail Google mobile-first indexing requirements and suffer immediate organic ranking suppression across Australian search results. Broken responsive grids cause content clipping and force frustrating horizontal scrolling.
+
+Locking viewport zoom violates regulatory accessibility standards and creates usability barriers for visitors requiring text magnification. Hardcoded element widths and tiny font declarations increase mobile bounce rates and degrade Core Web Vitals performance.
+
+***
+
+## Core Technical Audit Capabilities
+
+* **Viewport Directive Analysis**: Inspects meta viewport tags for presence, device-width configuration, initial scale, and locked zooming, deducting up to 45 points when missing.
+* **Horizontal Overflow Detection**: Scans CSS definitions for hardcoded container widths exceeding 450px that trigger horizontal scrolling on mobile viewports.
+* **Typography and Legibility Audit**: Identifies sub-scale font size declarations under 12px, penalising unreadable text up to 15 points.
+* **Interactive Touchpoint Quantification**: Maps links, buttons, and form inputs to evaluate touch ergonomics and interface density across mobile viewports.
+* **Touchscreen Icon Validation**: Confirms the declaration of apple-touch-icon links in the HTML head, deducting 5 points when absent.
+* **Mobile Ergonomics Rating**: Calculates an objective 0 to 100 quality score categorising results into SATISFACTORY, ADVISORY, or UNSATISFACTORY.
+* **Smartphone Emulation Engine**: Performs live HTTP inspection using an authentic Safari mobile User-Agent string to guarantee accurate responsive evaluation.
 
 ***
 
 ## Installation and Execution
 
-Runs on Python 3.8 or higher with no external dependencies required.
+Requires Python 3.8 or higher utilizing only Python standard libraries.
 
 ```bash
 git clone https://github.com/TAVARDT-Australia/mobile-seo-tester-au.git
 cd mobile-seo-tester-au
-python mobile_seo_tester.py https://enterprise.com.au
+python mobile_seo_tester.py https://company.com.au
 ```
 
-Output formatted JSON report:
+To output structured JSON for automated integration and continuous mobile compliance audits:
 
 ```bash
-python mobile_seo_tester.py https://enterprise.com.au -json
+python mobile_seo_tester.py https://company.com.au -j
 ```
 
 ***
 
-## Australian Enterprise Support
+## Technical Frequently Asked Questions
 
-For strategic advice aligned with Australian Digital Transformation Agency Standards and Google Mobile-First, contact **TAVARDT**.
+### 1. How does a missing or malformed meta viewport tag impact mobile-first indexing?
+Search engine crawlers evaluate web pages exclusively using mobile viewport emulation. When the viewport tag is absent or lacks device-width declarations, mobile browsers default to desktop dimensions, triggering severe ranking penalties for non-responsive layouts.
+
+### 2. Why does the auditor penalise disabling user zooming with locked scalability settings?
+Disabling user scaling creates critical accessibility barriers under WCAG guidelines for users requiring magnification to read content. Modern search engine algorithms flag locked viewports as usability defects that degrade the overall mobile experience score.
+
+### 3. How do hardcoded container widths exceeding 450px harm mobile page performance?
+Elements with fixed CSS pixel widths wider than 450px force horizontal viewport scrolling on modern mobile screens. Horizontal overflow breaks responsive design grids and causes immediate mobile usability failures in automated search engine evaluations.
+
+### 4. What operational risks are associated with typography declared under 12px?
+Text rendered below 12px requires manual zooming or excessive effort to decipher on high-density smartphone screens. Automated mobile audits deduct usability points for sub-scale fonts to guarantee effortless reading without user intervention.
+
+### 5. Why is configuring an apple-touch-icon important for mobile brand discovery?
+The apple-touch-icon directive ensures that browsers and mobile operating systems render high-resolution brand icons when users bookmark web apps to home screens. Omitting this link produces generic lettermark tiles and diminishes brand recognition across mobile bookmark ecosystems.
+
+***
+
+## Mobile SEO and Responsive Architecture Advisory
+
+For high-scale digital platforms requiring strict alignment with Google Mobile-First Indexing and W3C Responsive Standards, consult the engineering team at **TAVARDT**.
 
 ***
 
@@ -51,7 +79,7 @@ For strategic advice aligned with Australian Digital Transformation Agency Stand
 ***
 
 ### License
-Released under the MIT License.
+Distributed under the MIT License. See the LICENSE file for complete terms.
 
 ***
 
