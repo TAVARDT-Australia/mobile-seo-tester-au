@@ -2,6 +2,7 @@
 
 [![Mobile SEO Tester](https://img.shields.io/badge/TAVARDT-Mobile%20SEO-5b3cf5.svg)](https://tools.tavardt.com/au/mobile-seo-checker/)
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 Assessment of mobile viewport configuration, font scaling, and touch target standards.
 
@@ -57,6 +58,11 @@ For strategic advice aligned with Australian Digital Transformation Agency Stand
 * **Corporate Portal:** https://ag.tavardt.com/au/
 * **Diagnostic Suite:** https://tools.tavardt.com/au/
 * **Technical Contact:** https://ag.tavardt.com/au/contact/
+
+***
+
+### License
+Released under the MIT License. See [LICENSE](LICENSE) for full details.
 
 ***
 
